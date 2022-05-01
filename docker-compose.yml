@@ -10,6 +10,7 @@ services:
     sysctls:
       net.ipv4.conf.all.src_valid_mark: 1
     restart: unless-stopped
+    platform: linux/amd64
     privileged: true
     ports:
       - 61000:1080
